@@ -29,10 +29,10 @@ public class Main {
             int rowChoice = sc.nextInt() - 1;
             System.out.print("Enter a column (1-3): ");
             int colChoice = sc.nextInt() - 1;
-            if (Objects.equals(board[rowChoice][colChoice], "") && turn % 2 == 0){
+            if ((board[rowChoice][colChoice].equals("")) && turn % 2 == 0){
                 String playerOne = "X";
                 board[rowChoice][colChoice] = playerOne;
-            } else if (Objects.equals(board[rowChoice][colChoice], "") && turn % 2 != 0){
+            } else if ((board[rowChoice][colChoice].equals("")) && turn % 2 != 0){
                 String playerTwo = "O";
                 board[rowChoice][colChoice] = playerTwo;
             } else {
